@@ -1,0 +1,8 @@
+require('./honorBattle')
+require('./changeColor')
+require('./changeNickname')
+require('./vote')
+require('./slap')
+require('./createAccount')
+require('./stats')
+require('./spam')

@@ -1,0 +1,6 @@
+require('./bot')
+require('./commands/index')
+require('./games/index')
+require('./chatExp')
+require('./voiceExp')
+require('./levelUp')
