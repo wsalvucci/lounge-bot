@@ -13,6 +13,9 @@ function legendaryBadResponse(attacker, victim) {
 function epicBadResponse(attacker, victim) {
     var responses = [
         '***' + attacker + ' whiffs like a bitch and gets absolutely curb stomped by ' + victim + '!***',
+        attacker + ', you talking mad shit for someone that is about to get kicked...',
+        victim + ': Get off me, bitch... \n https://media.giphy.com/media/mWcxXyXiUZ4Zi/giphy.gif',
+        attacker + ' whails ' + victim + ' in the face and- \n https://media.giphy.com/media/YWWmelTdszDF9V3pvK/giphy.gif \n \n ...oh no...',
     ];
     return responses[Math.floor(Math.random() * (responses.length))];
 }
@@ -20,27 +23,34 @@ function epicBadResponse(attacker, victim) {
 function rareBadResponse(attacker, victim) {
     var responses = [
         attacker + ' gets countered by ' + victim + ' and gets slapped instead!',
+        attacker + ' thinks he can slap someone...lol \n https://media.giphy.com/media/TD0NYrLpcnsTm/giphy.gif',
+        victim + ' whails ' + attacker + ' with a counter attack! \n https://media.giphy.com/media/ESbUBSDJmD3Mc/giphy.gif',
+        'Get lost' + attacker,
+        'Nobody asked for you ' + attacker + ' \n https://tenor.com/xrPo.gif'
     ];
     return responses[Math.floor(Math.random() * (responses.length))];
 }
 
 function uncommonBadResponse(attacker, victim) {
     var responses = [
-        attacker + ' pops ' + victim + ' with the inside of their hand.',
+        attacker + ' tried to smack ' + victim + ', but they missed...',
+        '*woooosh* \n ' + attacker + ' slap against ' + victim + ' hits nothing but air...',
     ];
     return responses[Math.floor(Math.random() * (responses.length))];
 }
 
 function commonResponse(attacker, victim) {
     var responses = [
+        attacker + ' pops ' + victim + ' with the inside of their hand.',
         attacker + ' smacks ' + victim + ' with the back of their hand',
+        '*thwack* \n ' + attacker + ' slaps ' + victim + ' across the cheek'
     ];
     return responses[Math.floor(Math.random() * (responses.length))];
 }
 
 function uncommonGoodResponse(attacker, victim) {
     var responses = [
-        attacker + ' bitch slaps ' + victim + ' into the ground!',
+        attacker + ' bitch slaps ' + victim + ' into the ground! \n http://gph.is/Z0G3pT',
     ];
     return responses[Math.floor(Math.random() * (responses.length))];
 }
@@ -49,22 +59,27 @@ function rareGoodResponse(attacker, victim) {
     var responses = [
         attacker + ' drops ' + victim + ' to the ground with a slap and slaps their corpse again!!',
         attacker + ' upper cuts ' + victim + '!! \n https://gfycat.com/powerlesscapitaliaerismetalmark',
+        attacker + ' unleashes the multi-punch against ' + victim + '! \n https://tenor.com/view/%e9%ba%bb%e5%b9%be%e5%85%94-punch-gif-14162290'
     ];
     return responses[Math.floor(Math.random() * (responses.length))];
 }
 
 function epicGoodResponse(attacker, victim) {
     var responses = [
+        attacker + ': "HEY ' + victim.toUpperCase() + '!!! \n http://gph.is/2qDEQdM',
         '***' + attacker + ' straight up punches the shit out of ' + victim + ' and then roundhouse kicks them!!!***',
         victim + ': "Why are you coming close to me?" \n' + attacker + ': "Well I cant beat the shit out of you without getting closer!" \n ***' + victim + ' got their head blown off by ' + attacker + 's slap!!!***',
         attacker + ': "***Hey ' + victim + '***." \n https://cdn.discordapp.com/attachments/517864914895765514/616093243834236929/image0.gif',
+        attacker + ': Hey there, ' + victim + '!! \n https://media.giphy.com/media/Ksbd9VWBvHefK/giphy.gif',
+        attacker + 'takes aim at ' + victim + '..... \n \n \n https://tenor.com/view/dick-punch-gif-5091485'
     ];
     return responses[Math.floor(Math.random() * (responses.length))];
 }
 
 function legendaryGoodResponse(attacker, victim) {
     var responses = [
-        '***FUS ROH DAH!*** \n https://gfycat.com/anothernippyfly \n ***' + victim + ' GOT HIT SO DAMN HARD THEY GOT KICKED FROM THE SERVER!*** You need to reinvite them...'
+        '***FUS ROH DAH!*** \n https://gfycat.com/anothernippyfly \n ***' + victim + ' GOT HIT SO DAMN HARD THEY GOT KICKED FROM THE SERVER!*** You need to reinvite them...',
+        '***' + attacker + ' TAKES AIM \n LAUNCHES A STRIKE \n AAAAAANNNDD-*** \n https://media.giphy.com/media/VXJWhaO7afRe/giphy.gif \n \n ...yeah they dead...'
     ];
     return responses[Math.floor(Math.random() * (responses.length))];
 }
@@ -72,8 +87,8 @@ function legendaryGoodResponse(attacker, victim) {
 bot.on('message', msg => {
     if (msg.content.toLowerCase().substring(0,6) === '!!slap') {
         var random = Math.random();
-        const guildAuthor = msg.guild.members.get(msg.author.id);
-        var authorName = authorName;
+        const guildAuthor = msg.guild.members.get(msg.author.id).nickname;
+        var authorName = guildAuthor;
         if (authorName === undefined) {
             authorName = msg.author.username;
         }

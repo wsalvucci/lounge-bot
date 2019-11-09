@@ -51,7 +51,9 @@ bot.on('message', msg => {
                     if (!userExists) {
                         charges.push({'id': msg.author.id, 'count': 10})
                         if (spamCount <= 10) {
-
+                            for (var i=0; i < spamCount; i++) {
+                                msg.channel.send('<@' + msg.mentions.users.first().id + '>')
+                            }
                         } else {
                             msg.reply('You only have 10 charges')
                         }

@@ -74,7 +74,7 @@ bot.on('message', msg => {
                     message.delete().catch(console.error);
                     msg.delete().catch(console.error);
                 })
-            });
+            }).catch(error => {console.log(error)});
         } else {
             msg.reply('You already are running a poll!')
         }
