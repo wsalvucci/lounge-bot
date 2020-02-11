@@ -16,6 +16,8 @@ function epicBadResponse(attacker, victim) {
         attacker + ', you talking mad shit for someone that is about to get kicked...',
         victim + ': Get off me, bitch... \n https://media.giphy.com/media/mWcxXyXiUZ4Zi/giphy.gif',
         attacker + ' whails ' + victim + ' in the face and- \n https://media.giphy.com/media/YWWmelTdszDF9V3pvK/giphy.gif \n \n ...oh no...',
+        '***Live look at ' + attacker + ' trying to slap ' + victim + '*** \n https://media.giphy.com/media/I6plPWpNVEKIM/giphy.gif',
+        victim + ': GET THE FUCK OUTTA MY WAY ' + attacker + ' \n https://media.giphy.com/media/3oriNZNKQIeMsf6mmk/giphy.gif'
     ];
     return responses[Math.floor(Math.random() * (responses.length))];
 }
@@ -26,7 +28,10 @@ function rareBadResponse(attacker, victim) {
         attacker + ' thinks he can slap someone...lol \n https://media.giphy.com/media/TD0NYrLpcnsTm/giphy.gif',
         victim + ' whails ' + attacker + ' with a counter attack! \n https://media.giphy.com/media/ESbUBSDJmD3Mc/giphy.gif',
         'Get lost' + attacker,
-        'Nobody asked for you ' + attacker + ' \n https://tenor.com/xrPo.gif'
+        'Nobody asked for you ' + attacker + ' \n https://tenor.com/xrPo.gif',
+        attacker + ' tried picking a fight out of their league \n https://media.giphy.com/media/RBZJldqvl7XAA/giphy.gif',
+        attacker + ' used kick on ' + victim + '! ' + attacker + ' hurt itself in confusion! \n https://media.giphy.com/media/xIZylOBSSTlLy/giphy.gif',
+        attacker + ' tried to tackle ' + victim + ' but got denied!! \n https://media.giphy.com/media/2xPJxEc8mVlYNA4J1H/giphy.gif'
     ];
     return responses[Math.floor(Math.random() * (responses.length))];
 }
@@ -35,6 +40,8 @@ function uncommonBadResponse(attacker, victim) {
     var responses = [
         attacker + ' tried to smack ' + victim + ', but they missed...',
         '*woooosh* \n ' + attacker + ' slap against ' + victim + ' hits nothing but air...',
+        attacker + ': Swing and a miss! \n https://media.giphy.com/media/QPxSQDvByu1G0/giphy.gif',
+        '***HEY BREAK IT UP ' + attacker + ' and ' + victim + '!!*** \n https://media.giphy.com/media/4b0EQh1BlkWCk/giphy.gif'
     ];
     return responses[Math.floor(Math.random() * (responses.length))];
 }
@@ -51,6 +58,8 @@ function commonResponse(attacker, victim) {
 function uncommonGoodResponse(attacker, victim) {
     var responses = [
         attacker + ' bitch slaps ' + victim + ' into the ground! \n http://gph.is/Z0G3pT',
+        attacker + ': "THERE CAN ONLY BE ONE OF US, ' + victim + '!!! \n https://media.giphy.com/media/mFwlk5Fg6znWWhBDji/giphy.gif',
+        attacker + ' slashes ' + victim + ' across the face! \n https://media.giphy.com/media/NmbDXsi4FzpcY/giphy.gif'
     ];
     return responses[Math.floor(Math.random() * (responses.length))];
 }
@@ -59,18 +68,25 @@ function rareGoodResponse(attacker, victim) {
     var responses = [
         attacker + ' drops ' + victim + ' to the ground with a slap and slaps their corpse again!!',
         attacker + ' upper cuts ' + victim + '!! \n https://gfycat.com/powerlesscapitaliaerismetalmark',
-        attacker + ' unleashes the multi-punch against ' + victim + '! \n https://tenor.com/view/%e9%ba%bb%e5%b9%be%e5%85%94-punch-gif-14162290'
+        attacker + ' unleashes the multi-punch against ' + victim + '! \n https://tenor.com/view/%e9%ba%bb%e5%b9%be%e5%85%94-punch-gif-14162290',
+        attacker + ': "HEY ' + victim.toUpperCase() + '!!! \n http://gph.is/2qDEQdM',
+        '***' + attacker + ' straight up punches the shit out of ' + victim + ' and then roundhouse kicks them!!!***',
+        attacker + ': Hey there, ' + victim + '!! \n https://media.giphy.com/media/Ksbd9VWBvHefK/giphy.gif',
+        attacker + ' breathes on ' + victim + 's face... \n https://media.giphy.com/media/69yrZWuu7clVYvmtJi/giphy.gif',
+        attacker + ' runs up to ' + victim + '. "***HIYA!!!***" \n https://media.giphy.com/media/Fmp9dqwy6XcY/giphy.gif',
+        attacker + ' runs ' + victim + ' over! \n https://media.giphy.com/media/jwKC0qlOoXmcLDB4vC/giphy.gif',
+        attacker + ' assaults ' + victim + ' with a quad! \n https://media.giphy.com/media/xULW8NuFfWPMUqxK92/giphy.gif',
+        attacker + ' MOVE ' + victim + '!! GET OUT THE WAY! \n https://media.giphy.com/media/F09NFq9b23Xpu/giphy.gif',
+        attacker + ' yeets ' + victim + ' off a cliff! \n https://media.giphy.com/media/5gfsg2p6B148U/giphy.gif'
     ];
     return responses[Math.floor(Math.random() * (responses.length))];
 }
 
 function epicGoodResponse(attacker, victim) {
     var responses = [
-        attacker + ': "HEY ' + victim.toUpperCase() + '!!! \n http://gph.is/2qDEQdM',
-        '***' + attacker + ' straight up punches the shit out of ' + victim + ' and then roundhouse kicks them!!!***',
         victim + ': "Why are you coming close to me?" \n' + attacker + ': "Well I cant beat the shit out of you without getting closer!" \n ***' + victim + ' got their head blown off by ' + attacker + 's slap!!!***',
         attacker + ': "***Hey ' + victim + '***." \n https://cdn.discordapp.com/attachments/517864914895765514/616093243834236929/image0.gif',
-        attacker + ': Hey there, ' + victim + '!! \n https://media.giphy.com/media/Ksbd9VWBvHefK/giphy.gif',
+        '***' + attacker + ' SUMMONS PRESIDENT TRUMP AND BEATS THE SHIT OUT OF ' + victim + ' WITH HIM!!*** \n https://media.giphy.com/media/10S1a1PhRypYn6/giphy.gif',
         attacker + 'takes aim at ' + victim + '..... \n \n \n https://tenor.com/view/dick-punch-gif-5091485'
     ];
     return responses[Math.floor(Math.random() * (responses.length))];
